@@ -4,10 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 body{
-    font-family: 'Red Hat Display', sans-serif;
     background-image: url(/images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-color: hsl(225, 100%, 94%);
@@ -38,11 +38,12 @@ img{
     font-weight: 900;
     text-align: center;
     margin-top: 30px;
+    color: hsl(223, 47%, 23%);
 }
 
 .card p{
     font-weight: 500;
-    color: rgb(97, 96, 96);
+    color: hsl(224, 23%, 55%);
     text-align: center;
     margin: 20px 40px 20px 20px;
 }
@@ -50,20 +51,24 @@ img{
 .plano{
     display: flex;
     align-items: center;
-    background-color: hsla(225, 100%, 94%, 0.377);
+    background-color: hsl(225, 100%, 98%);
     margin: 30px;
-    border-radius: 5px;
+    border-radius: 7px;
     height: 80px;
+    justify-content: center;
+    font-weight: 900;
 }
 
 .plano img{
-    width: 70px;
-    padding-left: 20px;
+    width: 59px;
+    padding-left: 5px;
     padding-right: 10px;
+    margin-top: 2px;
 }
 
 .plano .price{
     margin-right: 20px;
+    padding-left: 5px;
     font-weight: 500;
     font-size: 1rem;
 }
@@ -75,6 +80,51 @@ img{
 .plano #troca{
     padding-left: 70px;
     justify-content: flex-end;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 0.85rem;
+    color: hsl(245, 75%, 52%);
+    transition: 0.5s ease-in-out;
+}
+
+#troca:hover{
+    color: rgb(82, 118, 219);
+    cursor: pointer;  
+}
+
+
+button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+}
+
+button:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+.footer #btn{
+    border: none;
+    margin-bottom: 23px;
+    width: 320px;
+    height: 40px;
+    text-align: center;
+    background-color: hsl(245, 75%, 52%);
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 7px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.37);
+    transition: 0.5s ease-in-out;
+}
+
+#btn:hover{
+    background-color: rgb(82, 118, 219);
+    cursor: pointer;
 }
